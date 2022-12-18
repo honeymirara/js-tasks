@@ -3,4 +3,4 @@
 // test@gmail.com -> test
 
 const str = "test@gmail.com";
-console.log(str.slice(4));
+console.log(str.slice(0, 4));
