@@ -1,14 +1,18 @@
 //  Пользователь вводит число с клавиатуры. Нужно вывести на экран сколько в этом
 // числе цифр, а также положительное оно или отрицательное. Например, "Число " + num + " положительное". (length)
 
-const a = prompt() //
+const value = prompt() //
 
-if (isNaN(a)) {
-    console.log('строка');
+if (isNaN(value)) {
+
+    console.log("Error");
 
 } else {
-    console.log('числа');
+    console.log(value.length);
+    value = Number(value);
 
-    a = +a
-    console.log(a + a * a);
+   if(value > 0) {
+    console.log('Number ${value}');
+   }
+    
 }
