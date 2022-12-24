@@ -4,12 +4,11 @@
 //     чисел
 const x = prompt();
 
-
 if (isNaN(x)) {
-    console.log('Error')
+    console.log('Error');
 
-} else if (x === 0) {
-    console.log('Обратного числа не существуеьт')
+} else if (x == 0) {
+    console.log('Обратного числа не существуеьт');
 } else if (x != 0) {
     console.log(1 / x);
 }
