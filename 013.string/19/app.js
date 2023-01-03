@@ -8,4 +8,4 @@ console.log(finalString);
 for (let i = 0; i < string.lenght; i++) {
     res += string[i][0].toUpperCase() + string[i].slice(1) +" ";
 }
-console.log(res);  
+console.log(res);
