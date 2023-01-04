@@ -1,0 +1,1 @@
+// Преобразовать строку ‘Full StaCK DevELoper’ в массив вида [‘full, ‘stack’, ‘developer’]

@@ -3,6 +3,9 @@
 // значений, которые являются числами и НЕ равны 2 другим введенным. Если
 // длина массива равна 0, то вывести ‘Массив пуст’. Добавить проверку на ввод
 // только чисел после каждого введенного элемента. forEach
+
+
+
 // const value = 5;
 // let arr = [];
 // let res[];
@@ -20,15 +23,15 @@
 // })
 
 
-// let filtered = arr.filter(function (elem) {
-//     if (!isNaN(elem) && elem !== x && elem !== y) {
-//         return true;
-//     }
-// })
-// console.log(res);
+let filtered = arr.filter(function (elem) {
+    if (!isNaN(elem) && elem !== x && elem !== y) {
+        return true;
+    }
+})
+console.log(res);
 
-// if (res.length === 0) {
-//     console.log('empty');
-// } else {
-//     console.log('res');
-// }
+if (res.length === 0) {
+    console.log('empty');
+} else {
+    console.log('res');
+}
