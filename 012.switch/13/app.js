@@ -6,5 +6,5 @@ let num = prompt('Введите четырёхзначное число');
 if(isNaN(num)) {
     console.log('error');
 } else if (a % b === 1){
-    console.log('неч')
+    console.log('неч');
 }
