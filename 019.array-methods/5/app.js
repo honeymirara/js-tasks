@@ -4,16 +4,16 @@
 
 //1-ый способ
 
-let value = 10;
-let arr1 = [];
-let arr2 = [];
+let num = 10;
+let arr = [];
+let array = [];
 
 
-for (let i = 0; i < value; i++) {
+for (let i = 0; i < num; i++) {
     if (i < 5) {
-        arr1.push(prompt());
+        arr.push(prompt());
     } else {
-        arr2.push(prompt());
+        array.push(prompt());
     }
 }
 
