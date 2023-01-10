@@ -10,4 +10,5 @@ for (let i = 0; i < n; i++) {
 let counter = 0;
 arr.forEach(function (elem) {
 
-} ) 
+}) 
+console.log(arr)
