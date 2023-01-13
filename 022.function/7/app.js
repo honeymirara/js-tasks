@@ -2,14 +2,27 @@
 // только строки. Вторая для получения суммы всех строчных элементов массива.
 // Если результат функции проверки – true, то вызывать новую функцию,
 // возвращающую конкатенацию всех строчных элементов массива
-const arr = ['a', 'b', 'c'];
+const a = ['asd', '445', 'crh', '7578'];
 
-const find = (str) => {
-    const result = str.filter(elem => isNaN(elem));
-    return true;
-    if (result = true) {
-        console.log('a' + 'b' + 'c');
+const find = (arr) => {
+    const error = arr.filter(elem => !isNaN(elem));
+
+    if (error.length > 0) {
+        return false
+    } else {
+        return true
     }
 }
+
+const concat = (arr) => {
+    const bool = valid(arr);
+    if (bool === true) {
+        const reduce = arr.reduce((sum, el) => sum + el, '')
+        return reduce
+    } else {
+        return 'тут есть числа'
+    }
+}
+    concut(a)
 
 

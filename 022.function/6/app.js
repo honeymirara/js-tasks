@@ -7,11 +7,15 @@ const arr = [1, 2, 3, 4, 5];
 
 const doSum = (numbers) => {
     const result = numbers.filter(elem => !isNaN(elem));
-    return true;
+
+    if (result.length === 0) {
+        return true;
+    } else return false
 }
 
-let result = arr.reduce(function(sum, elem) {
-	return sum + elem;
+
+let result = arr.reduce(function (sum, elem) {
+    return sum + elem;
 }, 0);
 
 console.log(result);
