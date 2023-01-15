@@ -23,6 +23,6 @@ const concat = (arr) => {
         return 'тут есть числа'
     }
 }
-    concut(a)
+    concat(a);
 
 

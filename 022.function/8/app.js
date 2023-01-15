@@ -5,12 +5,25 @@
 const arr = [1, 2, 4, 5, 6];
 
 const find = (numbers) => {
-    const result = numbers.filter(elem => !isNaN(elem));
-    return true;
+    const num = numbers.filter(elem => !isNaN(elem));
+    if (num.length > 0) {
+        return true;
+
+    }
 }
 
+    const multiplication = (arr) => {
+        const bool = valid(arr);
+        if (bool === true) {
+            const reduce = arr.reduce((sum, el) => sum * el, '')
+            return reduce;
+        } else 
+            return 'тут есть строки';
+        
+    }
 
-if (result == true) {
-    
+    multiplication(arr);
 
-}
+
+
+

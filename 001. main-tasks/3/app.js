@@ -18,5 +18,10 @@ const db = [
 ];
 
 
-const client = {"id" , "test" , "label": "Test", "category": "test", "priority": 1 };
-const founData = arr.filter(el => )
+const client = { id: "test", label: "Test", category: "test", priority: 1 };
+const founData = arr.filter(el => el.id === client.id);
+
+if (foundData.length === 0) {
+    arr.push(client);
+    console.log(arr);
+} else console.log('error');
