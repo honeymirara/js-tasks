@@ -19,3 +19,13 @@ let object = {
         console.log(arr);
 
     }())
+
+
+
+
+
+
+
+
+
+
