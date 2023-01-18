@@ -1,24 +1,22 @@
 /* Напишите функцию, которая принимает два параметра: строку и букву. Функция
 должна подсчитывать количество вхождений указанной буквы в строке. Добавить
 проверки  */
+let one = 'hanna';
+let two = 'a';
 
-let object = {
-    value1: 17,
-    value2: 100,
-    key1: 'string',
-    key2: 'qwerty',
+function findTwo(one_, two_) {
+    let res = 0;
+    for (let i = 0; i < one_.length; i++) {
+        if (one_[i] === two_) {
+            res += 1;
+        }
+    }
+    return res;
 }
 
-    (function () {
-        let arr = [];
-        for (const key in object) {
-            if (typeof object[key] == 'number') {
-                arr.push(key);
-            }
-        }
-        console.log(arr);
+const count = findTwo(one, two);
+console.log(count);
 
-    }())
 
 
 

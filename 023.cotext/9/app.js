@@ -13,9 +13,9 @@ const doArray = (n) => {
     return arr;
 }
 const filterArr = (array, a) => {
-    let data = array.filter(function elem) {
+    let data = array.filter(function (elem) {
 
-    }
+    })
 }
 
- const array = doArray(n);
+const array = doArray(n);
