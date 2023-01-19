@@ -44,5 +44,5 @@ function doSum(count){
     return count + doSum(array[i]);
 
 }  
-let result = doSum(count);
+let result = doSum(array);
 console.log(result);
