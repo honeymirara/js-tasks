@@ -33,16 +33,17 @@ console.log(getSum);
 
 
  */
- // 3-ий способ
+// 3-ий способ
 
 const array = [1, 2, 3, 4, 5];
+let i = 0;
 
-function doSum(count){
-    if (count === 1){
-        return count 
+function doSum(el_, array_) {
+    if (i === array.length - 1) {
+        return array_[i]
     }
-    return count + doSum(array[i]);
+    return array_[i] + doSum(array_);
 
-}  
+}
 let result = doSum(array);
 console.log(result);
