@@ -12,7 +12,7 @@ console.log(Math.pow(x, n));
 
 // 2-ой способ с помощью цикла for
 
-let x = prompt('Введите осонование');
+/* let x = prompt('Введите осонование');
 let n = prompt('Введите степень');
 
 function doExponentiate(x, n) {
@@ -24,8 +24,23 @@ function doExponentiate(x, n) {
 }
 
 let result = doExponentiate(x, n);
-console.log(result);
+console.log(result); */
 
+
+
+// 3-ий способ решения с рекурсией 
+/* let x = prompt('Введите основание');
+let n = prompt('Введите степень'); */
+
+function pow(x, n) {
+    if (n == 1) {
+        return x;
+    } else {
+        return x * pow(x, n - 1);
+    }
+}
+let func = pow(2,3);
+console.log(func);
 
 
 
