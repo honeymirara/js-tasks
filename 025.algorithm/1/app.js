@@ -4,7 +4,6 @@
 ошибке.  */
 let a = 3;
 let b = [1, 2, 3, 4, 5];
-function searchBinary(a, b) {
-let left = 0;
-let right = 
+function searchBinary(a_, b_) {
+ 
 }
