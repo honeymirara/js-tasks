@@ -5,3 +5,14 @@
 5 -> 3
 10 -> 34
 7 -> 8 */
+
+
+// Fn = Fn-1 + Fn-2
+
+let n = prompt('Введите порядковый номер числа из ряда Фиббоначи');
+
+function searchNumber(n){
+    if (n<=1){searchNumber(n - 1) + searchNumber(n - 2);
+    }
+}
+searchNumber();
