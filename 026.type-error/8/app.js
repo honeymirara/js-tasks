@@ -4,10 +4,15 @@
 ["O","Q","R","S"] -> "P" */
 
 let arr = [a, b, d, e];
+let checkArray = [a, b, c, d, e];
 
 function findLetter(arr_) {
     try {
-        return 
+        if (arr.length !== checkArray.length){
+            return arr.split('').arr.map(el => el ** 2).join('');
+        } 
+        
+        
 
     }catch (err) {
         return err.message;

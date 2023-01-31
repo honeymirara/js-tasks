@@ -13,9 +13,9 @@ let c = 3;
 
 function doTriangle(elem) {
     try {
-        if (a + b > c && a + c > b && c + b > a) {
-            return true
-        }
+        if (a + b > c && b + c > a && a + c > b) {
+            return true;
+        } else throw new Error("triangle doesn't exists");
     } catch (err) {
         return err.message;
     }
