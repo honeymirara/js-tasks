@@ -3,18 +3,18 @@
 ["a","b","c","d","f"] -> "e"
 ["O","Q","R","S"] -> "P" */
 
-let arr = [a, b, d, e];
-let checkArray = [a, b, c, d, e];
+const al = 'abcdefghijklmnopqrstuvwxyz';
+const pr = ["a", "b", "c", "d", "f"].join('').toLowerCase;
 
-function findLetter(arr_) {
-    try {
-        if (arr.length !== checkArray.length){
-            return arr.split('').arr.map(el => el ** 2).join('');
-        } 
-        
-        
+const firstIndex = al.indexOf(pr[0])
 
-    }catch (err) {
-        return err.message;
+const slEl = al.slice(firstIndex, firstIndex + pr.length + 1);
+
+for (let i = 0; i < slEl.length; i++) {
+    if (slEl[i] !== pr[i]) {
+        console.log(slEl[i]);
     }
 }
+
+console.log(pr);
+console.log(slEl);

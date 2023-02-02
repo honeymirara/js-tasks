@@ -14,6 +14,7 @@ let arr = [1, 7, 3, 9, 0, 3, 5, 2];
 
 function doSumOfHouses(arr_){
     
+    
 
 }
 
