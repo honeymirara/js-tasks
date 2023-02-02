@@ -10,12 +10,31 @@
 Добавить проверку, что номера домов – только числа.
 [5, 1, 2, 3, 0, 1, 5, 0, 2] –> 11 (5 + 1 + 2 + 3 = 11) */
 
-let arr = [1, 7, 3, 9, 0, 3, 5, 2];
+const arr = [1, 7, 3, 9, 0, 3, 5, 2];
+let sum = 0;
 
-function doSumOfHouses(arr_){
-    
-    
-
+function validator(arr_) {
+    const bool = arr.every(el => !isNaN(el));
+    if (bool === false) throw new Error('Это буква');
+    return true;
 }
 
-doSumOfHouses(arr);
+function test(arr_) {
+    try {
+        validator(arr);
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === 0) {
+                break;
+
+            } else {
+                sum += arr[i];
+            }
+        }
+        return sum;
+    } catch (err) {
+        return err.message;
+    }
+}
+
+let result = test(arr);
+console.log(result);
