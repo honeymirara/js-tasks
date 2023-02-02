@@ -13,8 +13,9 @@ const slEl = al.slice(firstIndex, firstIndex + pr.length + 1);
 for (let i = 0; i < slEl.length; i++) {
     if (slEl[i] !== pr[i]) {
         console.log(slEl[i]);
+        break
     }
 }
 
-console.log(pr);
-console.log(slEl);
+/* console.log(pr);
+console.log(slEl); */
