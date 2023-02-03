@@ -15,7 +15,7 @@ let sum = 0;
 
 function validator(arr_) {
     const bool = arr.every(el => !isNaN(el));
-    if (bool === false) throw new Error('Это буква');
+    if (!bool) throw new Error('Это буква');
     return true;
 }
 
@@ -23,12 +23,8 @@ function test(arr_) {
     try {
         validator(arr);
         for (let i = 0; i < arr.length; i++) {
-            if (arr[i] === 0) {
-                break;
-
-            } else {
-                sum += arr[i];
-            }
+            if (arr[i] === 0) break
+            sum += arr[i];
         }
         return sum;
     } catch (err) {
