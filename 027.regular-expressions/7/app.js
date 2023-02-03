@@ -8,3 +8,15 @@
 • Числа
 • Специальные символы
 • Длина не менее 8 символов */
+
+let pass = prompt('Введите пароль');
+
+function isValid(pass_) {
+    try {
+        if (!/^[[a-zA-Z^\d]{8,20}$/gm).test(pass_) throw new Error;
+
+    }catch (err) {
+        return err.message;
+    }
+}
+
