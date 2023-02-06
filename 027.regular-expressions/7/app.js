@@ -13,10 +13,13 @@ let pass = prompt('Введите пароль');
 
 function isValid(pass_) {
     try {
-        if (!/^[[a-zA-Z^\d]{8,20}$/gm).test(pass_) throw new Error;
-
-    }catch (err) {
+        if (!/^[[a-zA-Z^\d]{8,20}$/gm.test(pass_)) throw new Error('Пароль не надежный')
+        return true;
+    } catch (err) {
         return err.message;
     }
 }
+
+let result = isValid(pass);
+console.log(result);
 
