@@ -4,6 +4,11 @@
 
 let button = document.querySelector('.button');
 button.addEventListener('click', function () {
-    let input = document.querySelector('input');
-    alert(input.value);
+    try {
+        let input = document.querySelector('input');
+        if (input.value === '') throw new Error('нет значения');
+        alert(input.value);
+    } catch (error) {
+        alert(error.message)
+    }
 })
