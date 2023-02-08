@@ -3,6 +3,7 @@
  */
 
 let button = document.querySelector('.button');
-button.addEventListener('click', function(){
-    
+button.addEventListener('click', function () {
+    let input = document.querySelector('input');
+    alert(input.value);
 })
