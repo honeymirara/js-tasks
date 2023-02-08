@@ -3,11 +3,13 @@
  */
 
 let button = document.querySelector('.button');
-button.addEventListener('click', function () {
+btn.addEventListener('click', function () {
     try {
         let input = document.querySelector('input');
-        if (input.value === '') throw new Error('нет значения');
+        if (input.value === '')
+            throw new Error('нет значения');
         alert(input.value);
+
     } catch (error) {
         alert(error.message)
     }
