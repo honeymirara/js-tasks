@@ -4,3 +4,6 @@
 
 const btn = document.querySelector('button');
 const input = document.querySelector('input');
+const result = document.querySelector('.result');
+
+btn.addEventListener('click', ())
