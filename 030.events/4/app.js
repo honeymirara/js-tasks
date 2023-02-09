@@ -4,15 +4,19 @@
 
 let btn = document.querySelector('.button');
 btn.addEventListener('click', function () {
-    let inp = document.querySelector('input');
+
 
     try {
+        let inp = document.querySelector('input');
         if (!inp.value) {
             throw new Error('пустое сообщение');
         }
+        inp.style = 'border: 1px solid black';
+        inp.value = '';
         alert(inp.value);
 
     } catch (err) {
+        inp.style = 'border: 1px solid red';
         alert(err.message);
     }
 
