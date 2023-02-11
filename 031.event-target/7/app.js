@@ -11,4 +11,5 @@ element.addEventListener('click', function () {
     } else {
         result.innerHTML = '${tag_input.value} НЕчетное';
     }
+    tag_input.value = '';
 })
