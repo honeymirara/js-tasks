@@ -43,3 +43,5 @@ class ServerPost {
     }
 }
 let serverPost = new ServerPost();
+let result = serverPost.controller()
+console.log(result);
