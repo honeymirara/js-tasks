@@ -19,29 +19,39 @@ label в toLowerCase таким образом, чтобы в БД был зап
 Если совпадение есть – ошибка. Добавить проверки  */
 
 class ServerPost {
-    controller(){
+    controller() {
         try {
             const data = this.service();
             return data;
-        }catch (error){
+        } catch (error) {
             return error.message
         }
     }
-    service(){
-        const data = this.repository();
+    service(object) {
+        const data = this.repository(object);
         return data
     }
 
-    repository(){
+    repository(object) {
         const array = [
             { "id": "javascript", "label": "JavaScript", "category": "programmingLanguages", "priority": 1 },
             { "id": "typescript", "label": "TypeScript", "category": "programmingLanguages", "priority": 1 },
             { "id": "sql", "label": "SQL", "category": "programmingLanguages", "priority": 2 },
             { "id": "java", "label": "Java", "category": "programmingLanguages", "priority": 3 },
-            { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }]
+            { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }
+        ];
+        const filtered = array.filter((elem) => elem.id === object.id);
+        if (filtered.length > 0) throw new Error(``)
         return array;
+
     }
+
 }
+const object = {
+    "label": "JavaScript", "category": "programmingLanguages", "priority": 1
+};
+
+
 let serverPost = new ServerPost();
 let result = serverPost.controller()
 console.log(result);
