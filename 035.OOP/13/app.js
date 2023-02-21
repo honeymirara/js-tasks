@@ -29,7 +29,7 @@ class ServerPost {
     }
     service(object) {
         const data = this.repository(object);
-        return data
+        return data;
     }
 
     repository(object) {
@@ -40,15 +40,19 @@ class ServerPost {
             { "id": "java", "label": "Java", "category": "programmingLanguages", "priority": 3 },
             { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }
         ];
+
         const filtered = array.filter((elem) => elem.id === object.id);
-        if (filtered.length > 0) throw new Error(``)
+        if (filtered.length > 0) throw new Error(`this label is exist`)
+        array.push(object);
         return array;
 
     }
 
 }
 const object = {
-    "label": "JavaScript", "category": "programmingLanguages", "priority": 1
+    "label": "JavaScript",
+    "category": "programmingLanguages",
+    "priority": 1
 };
 
 
