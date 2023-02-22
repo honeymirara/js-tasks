@@ -19,9 +19,9 @@ label в toLowerCase таким образом, чтобы в БД был зап
 Если совпадение есть – ошибка. Добавить проверки  */
 
 class ServerPost {
-    controller() {
+    controller(object) {
         try {
-            const data = this.service();
+            const data = this.service(object);
             return data;
         } catch (error) {
             return error.message
@@ -57,5 +57,5 @@ const object = {
 
 
 let serverPost = new ServerPost();
-let result = serverPost.controller()
+let result = serverPost.controller(object);
 console.log(result);
