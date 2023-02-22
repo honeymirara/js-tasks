@@ -43,7 +43,7 @@ class ServerPost {
 
         const filtered = array.filter((elem) => elem.id === object.id);
         if (filtered.length > 0) throw new Error(`this label is exist`)
-        array.push(object);
+        array.push({id:object.label.toLowerCase(), ...object});
         return array;
 
     }
