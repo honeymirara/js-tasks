@@ -17,7 +17,7 @@ repository – функция, симулирующая БД. Хранит ма�
 имеется. В противном случае бросить исключение. Добавить проверки  */
 
 class ServerById {
-    controller() {
+    controller(object) {
         try {
             const data = this.service();
             return data;
@@ -25,13 +25,13 @@ class ServerById {
             return error.message;
         }
     }
-    service() {
+    service(object) {
         const data = this.repository();
         return data;
 
     }
 
-    repository() {
+    repository(object) {
         const array = [
             { "id": "javascript", "label": "JavaScript", "category": "programmingLanguages", "priority": 1 },
             { "id": "typescript", "label": "TypeScript", "category": "programmingLanguages", "priority": 1 },
@@ -39,8 +39,16 @@ class ServerById {
             { "id": "java", "label": "Java", "category": "programmingLanguages", "priority": 3 },
             { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }
         ]
+
+        const filtered = array.filter(elem) {
+            
+        }
         return array;
     }
+}
+
+const object = {
+    "id": "javascript", 
 }
 
 const serverById = new ServerById();
