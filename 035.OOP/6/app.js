@@ -22,7 +22,7 @@ service(){
     return data;
 }
 
-repository(){
+repository() {
     const arr = [
         { "id": "javascript", "label": "JavaScript", "category": "programmingLanguages", "priority": 1 },
         { "id": "typescript", "label": "TypeScript", "category": "programmingLanguages", "priority": 1 },
