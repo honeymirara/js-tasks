@@ -40,15 +40,14 @@ class ServerById {
             { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }
         ]
 
-        const filtered = array.filter(elem) {
-            
-        }
-        return array;
+        const filtered = array.filter((elem) => elem.id == object.id);
+        if (filtered.length == 0) throw new Error(`Такого айди нет`)
+        return filtered;
     }
 }
 
 const object = {
-    "id": "javascript", 
+    "id": "javascript",
 }
 
 const serverById = new ServerById();
