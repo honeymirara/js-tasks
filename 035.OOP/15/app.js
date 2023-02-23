@@ -45,7 +45,7 @@ class ServerDelete {
 
 }
 const object = JSON.parse(`{
-    "id" : javascript"
+    "id" : test"
 
 }`)
 
