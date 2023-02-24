@@ -37,7 +37,9 @@ class ServerDelete {
             { "id": "java", "label": "Java", "category": "programmingLanguages", "priority": 3 },
             { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }
         ]
-        return array;
+        const filtered = array.filter((elem) => elem.id !== object.id);
+        if (filtered.length == array.length) throw new Error(`такого id нету`)
+        return filtered;
 
     }
 
