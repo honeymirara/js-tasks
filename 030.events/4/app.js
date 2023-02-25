@@ -2,22 +2,18 @@
 клику на кнопку вызвать alert и отобразить сообщение из значения инпута.
 Проверки на ввод. Обработать ошибки */
 
-let btn = document.querySelector('.button');
-btn.addEventListener('click', function () {
+const inputTag = document.querySelector('input');
+const buttonTag = document.querySelector('button');
 
-
+buttonTag.addEventListener('click', function () {
     try {
-        let inp = document.querySelector('input');
-        if (!inp.value) {
-            throw new Error('пустое сообщение');
-        }
-        inp.style = 'border: 1px solid black';
-        inp.value = '';
-        alert(inp.value);
-
+        if (!inputTag.value) throw new Error('input is empty');
+        if (!isNaN(inputTag.value)) throw new Error('input is not correct');
+        alert(inputTag.value);
     } catch (err) {
-        inp.style = 'border: 1px solid red';
         alert(err.message);
     }
+});
 
-})
+
+
