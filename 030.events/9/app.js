@@ -7,6 +7,11 @@ const unlockButtonTag = documnet.querySelector('.unlock');
 const lockButtonTag = documnet.querySelector('.lock');
 
 unlockButtonTag.addEventListener('click', function(){
+    try{
+        if(inputTag.value)
+
+    } catch(err){
+        alert(err.message);
     
 })
 
