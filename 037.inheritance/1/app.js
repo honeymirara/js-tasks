@@ -15,23 +15,51 @@
 вывести их на экран.  */
 
 class Employee {
-    name = "Julia";
-    id = "1234"
+    name
+    id
     getName() {
         return this.name;
+    }
+    getId() {
+        return this.id;
+    }
+
+    setName() {
+        this.name = Julia;
+    }
+
+    setId() {
+        this.Id = 234;
     }
 }
 
 class ProductionWorker extends Employee {
-    shiftNumber = 3;
-    perHour = 100;
+    shiftNumber;
+    perHour;
     getShiftNumber() {
         return this.shiftNumber;
     }
-    getPerHour(){
+    getPerHour() {
         return this.perHour;
     }
-    
+
+    setPerHour(ph) {
+        this.perHour = ph;
+    }
+    setShiftNumber(s) {
+        this.shiftNumber = 5;
+    }
+
+
 }
 
-let ProductionWorker = new ProductionWorker();
+let productionWorker = new ProductionWorker();
+productionWorker.setName('J');
+productionWorker.setId(99);
+productionWorker.setShiftNumber('467');
+productionWorker.setPerHour(100);
+
+console.log(ProductionWorker.getName());
+console.log(ProductionWorker.getId());
+console.log(ProductionWorker.getShiftNumber());
+console.log(ProductionWorker.get());
