@@ -23,9 +23,21 @@ class Person{
         return this.phoneNumber;
     }
 
-    setName(){
-       this.Name =  
+    setName(name){
+       this.name = julia; 
+    }
+
+    setAddress(addr){
+        this.address = Minsk;
+    
+    }
+
+    setPhoneNumber(number){
+        this.phoneNumber = 758694;
     }
 }
 
+class Customer{
+
+}
 
