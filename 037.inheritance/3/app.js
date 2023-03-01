@@ -48,6 +48,23 @@ class Singer extends Worker {
 }
 
 
-let singer = new Singer();
+
 let worker = new Worker();
+
+worker.setName('J');
+worker.setSurname('S');
+let result = worker.getFullName();
+console.log(result);
+
+console.log(`---`);
+
+let singer = new Singer();
+singer.setName('k');
+singer.setSurname('s')
+singer.setYears(23);
+singer.setBirthday(`03.07.2000`);
+singer.setStyle(`pop`);
+let result2 = singer.getMoreInfo();
+console.log(result2);
+
 
