@@ -15,20 +15,22 @@
 вывести их на экран.  */
 
 class Employee {
-    name
-    id
+    name;
+    id;
+
     getName() {
         return this.name;
     }
-    getId() {
+
+    getId(){
         return this.id;
     }
 
-    setName() {
-        this.name = Julia;
+    setName(name) {
+        this.name = this.name;
     }
 
-    setId() {
+    setId(id) {
         this.Id = 234;
     }
 }
@@ -36,6 +38,7 @@ class Employee {
 class ProductionWorker extends Employee {
     shiftNumber;
     perHour;
+
     getShiftNumber() {
         return this.shiftNumber;
     }
@@ -46,7 +49,7 @@ class ProductionWorker extends Employee {
     setPerHour(ph) {
         this.perHour = ph;
     }
-    setShiftNumber(s) {
+    setShiftNumber(number) {
         this.shiftNumber = 5;
     }
 

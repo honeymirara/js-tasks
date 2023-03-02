@@ -2,16 +2,15 @@
 границы кнопки сновка скрывать
  */
 
-const buttonTag = document.querySelector('button');
-const messageTag = document.querySelector('.message');
+let buttonTag = document.querySelector('button');
 
-buttonTag.addEventListener('mousemove', function () {
-    try {
+buttonTag.addEventListener('mouseover', function () {
+    let paragraph = document.querySelector('.message');
+    paragraph.innerHTML = 'Hi';
+})
 
-        messageTag.innerHTML('Hi');
-    } catch (err) {
-        alert(err.message);
-    }
-
+element.addEventListener('mouseout', function () {
+    let paragraph = document.querySelector('.message');
+    paragraph.innerHTML = '';
 })
 
