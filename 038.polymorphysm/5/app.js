@@ -13,7 +13,6 @@ value в конструктор – строка и состоит из букв
 class StringValue {
     constructor(value) {
         this.value = value;
-
     }
 
     getValue() {
@@ -23,7 +22,28 @@ class StringValue {
 }
 
 class Validation extends StringValue {
+    constructor(value, confirmValue) {
+        super(value, confirmValue)
+        this.confirmValue = confirmValue;
+    }
 
+    getValue() {
+        super.getValue();
+        try {
+            if (typeof value == 'string');
+            console.log(this.value, this.confirmValue);
+        } catch (err) {
+            alert(err.message);
+        }
+    }
 }
 
-const stringValue = new StringValue();
+
+const stringValue = new StringValue('hi');
+stringValue.getValue();
+
+console.log('----');
+
+const validation = new Validation('hello', 'bye');
+validation.getValue();
+
