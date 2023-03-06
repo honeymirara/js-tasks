@@ -18,7 +18,6 @@ class StringValue {
     getValue() {
         console.log(this.value);
     }
-
 }
 
 class Validation extends StringValue {
@@ -26,7 +25,6 @@ class Validation extends StringValue {
         super(value, confirmValue)
         this.confirmValue = confirmValue;
     }
-
     getValue() {
         super.getValue();
         try {
@@ -38,12 +36,9 @@ class Validation extends StringValue {
     }
 }
 
-
 const stringValue = new StringValue('hi');
 stringValue.getValue();
-
 console.log('----');
-
 const validation = new Validation('hello', 'bye');
 validation.getValue();
 
