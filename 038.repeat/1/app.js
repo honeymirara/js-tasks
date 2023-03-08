@@ -16,9 +16,10 @@ function filteredArray(arr) {
     try {
         isValid(arr);
         const newArr = arr.filter(elem => {
-            if (elem[indexOf(0)] === 'a' || elem[indexOf(0)] === 'h') {
+            if (elem[0] === 'a' || elem[0] === 'h') {
                 return true;
             }
+            
         })
         return newArr;
     } catch (err) {
