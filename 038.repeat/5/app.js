@@ -10,11 +10,14 @@ class NumberArray {
     multArr() {
         let arr = [];
         for (let i = 0; i < 5; i++) {
-            return arr.push(Math.floor(Math.random) * 100);
+            return arr.push(Math.floor(Math.random() * 100));
         }
     }
 }
 
 class ConsoleArray extends NumberArray {
-
+    multArr() {
+        super.multArr();
+        console.log
+    }
 }
