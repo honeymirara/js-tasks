@@ -6,8 +6,15 @@ multArr, которая заполняет и возвращает массив 
 метод super. Далее посчитать произведение всех элементов массива используя
 reduce */
 
-class NumberArray{
-    multArr(){
-        
+class NumberArray {
+    multArr() {
+        let arr = [];
+        for (let i = 0; i < 5; i++) {
+            return arr.push(Math.floor(Math.random) * 100);
+        }
     }
+}
+
+class ConsoleArray extends NumberArray {
+
 }
