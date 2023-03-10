@@ -12,12 +12,20 @@ class NumberArray {
         for (let i = 0; i < 5; i++) {
             return arr.push(Math.floor(Math.random() * 100));
         }
+        return arr;
     }
 }
+
 
 class ConsoleArray extends NumberArray {
     multArr() {
         super.multArr();
-        console.log
+        let summary = arr.reduce(function (sum, el) {
+            return sum * el;
+        }, 0)
+
     }
 }
+
+const consoleArray = new ConsoleArray;
+console.log(consoleArray.multArr());
