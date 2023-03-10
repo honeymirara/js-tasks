@@ -17,6 +17,7 @@ repository – функция, симулирующая БД. Хранит ма�
 class ServerById {
     middleware() {
 
+
     }
 
     controller() {
