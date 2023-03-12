@@ -2,13 +2,14 @@
 Напишите класс Person с атрибутами данных для имени, фамилии. Затем
 напишите класс Customer, который является подклассом класса Person. Класс
 Customer должен иметь поле телефонного номера человека. Продемонстрируйте
-экземпляр класса Customer вызвав геттеры собственного класса и суперкласса */\
+экземпляр класса Customer вызвав геттеры собственного класса и суперкласса */
+
 class Person {
     name;
     surname;
 
     getName() {
-        this.name;
+       return this.name;
     }
 
     setName(name) {
@@ -16,10 +17,25 @@ class Person {
     }
 
     getSurname() {
-        this.surname;
+       return this.surname;
     }
 
     setSurname(surname) {
         this.surname = surname;
     }
 }
+
+class Customer extends Person {
+    phonenumber;
+
+    getPhonenumber() {
+       return this.phonenumber;
+    }
+
+    setPhonenumber(phonenumber) {
+        this.phonenumber = phonenumber;
+    }
+
+    super(name, surname);
+}
+
