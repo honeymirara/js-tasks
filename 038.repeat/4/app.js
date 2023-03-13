@@ -9,7 +9,7 @@ class Person {
     surname;
 
     getName() {
-       return this.name;
+        return this.name;
     }
 
     setName(name) {
@@ -17,7 +17,7 @@ class Person {
     }
 
     getSurname() {
-       return this.surname;
+        return this.surname;
     }
 
     setSurname(surname) {
@@ -28,14 +28,21 @@ class Person {
 class Customer extends Person {
     phonenumber;
 
+    super(name, surname);
+
     getPhonenumber() {
-       return this.phonenumber;
+        return this.phonenumber;
     }
 
     setPhonenumber(phonenumber) {
         this.phonenumber = phonenumber;
     }
-
-    super(name, surname);
 }
+
+customer.setName('Adrianna');
+customer.setSurname('Lima');
+customer.setPhonenumber('875834837');
+console.log(customer.getName());
+console.log(customer.getSurname());
+console.log(customer.getPhonenumber());
 
