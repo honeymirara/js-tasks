@@ -28,7 +28,7 @@ class Person {
 class Customer extends Person {
     phonenumber;
 
-    super(name, surname);
+
 
     getPhonenumber() {
         return this.phonenumber;
@@ -38,6 +38,8 @@ class Customer extends Person {
         this.phonenumber = phonenumber;
     }
 }
+
+const customer = new Customer;
 
 customer.setName('Adrianna');
 customer.setSurname('Lima');
