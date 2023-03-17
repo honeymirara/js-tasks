@@ -7,15 +7,15 @@ class DomHtml {
 
     } generateEvent() {
         const btn = document.querySelector('button');
-        btn.addEventListener('click', function ();
+        btn.addEventListener('click', function (){
         const inp1 = document.querySelector('.inp1');
         const inp2 = document.querySelector('.inp2');
         this.doPlus(inp1, inp2);
         this.doMinus(inp1, inp2);
         this.doMultiply(inp1, inp2);
         this.doDivide(inp1, inp2);
-   )
-    }
+        })  
+}
     doPlus(inp1, inp2) {
         const plus = document.querySelector('.plus');
         plus.innerHTML = +inp1.value + +inp2.value

@@ -5,13 +5,29 @@
 
 let n = prompt('enter the value:');
 
-function doArray(length){
+function doArray() {
     const arr = [];
-    for(let i = 0; i<length; i++){
+    for (let i = 0; i < 5; i++) {
         arr.push(prompt('enter the value:'));
     }
 }
 
-function newArr(arr){
+function newArr(arr) {
+    try {
+        const newArray = [];
+        for (let i = 0; i < 5; i++) {
+            if (arr[i] == 0 || arr[0] === '') {
+                arr.push('#' + arr.value);
+            }
+            return newArray;
+        }
 
+
+
+    } catch (err) {
+        return err.message;
+    }
 }
+
+let result = newArr()
+console.log(result);
