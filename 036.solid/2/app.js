@@ -3,12 +3,15 @@
 происходит проверка на почту. Вывести true, если провека успешна */
 
 const buttonTag = document.querySelector('button');
+const mail = 'poshta@gmail.com';
 
 class DomHtml {
 
     middleware() {
         try {
-            buttonTag.addEventListener('click', fuction())
+            buttonTag.addEventListener('click', fuction(){
+                if(/[A-aZ-z0-9]+[@]+[a-z]+\.[a-z]+$/gm.test()) throw new Error'mail is invalid';
+            })
 
 
         } catch (err) {
