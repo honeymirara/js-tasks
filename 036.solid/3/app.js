@@ -23,6 +23,7 @@ class ServerGetAll {
 
     service(object) {
         const data = this.repository(object);
+        return data;
 
     };
 
@@ -34,5 +35,13 @@ class ServerGetAll {
             { "id": "java", "label": "Java", "category": "programmingLanguages", "priority": 3 },
             { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }
         ];
+      
+        
     };
 }
+
+const object = {
+    "label": "JavaScript",
+    "category": "programmingLanguages",
+    "priority": 1
+};
