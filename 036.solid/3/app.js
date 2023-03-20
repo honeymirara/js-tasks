@@ -22,6 +22,7 @@ class ServerGetAll {
     };
 
     service(object) {
+        const data = this.repository(object);
 
     };
 
