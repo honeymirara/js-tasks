@@ -35,7 +35,8 @@ class ServerGetAll {
             { "id": "java", "label": "Java", "category": "programmingLanguages", "priority": 3 },
             { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }
         ];
-      
+        const filtered = array.filter((elem) => elem.id === object.id);
+        if (filtered.length > 0) throw new Error('this label is exist');
         
     };
 }
@@ -45,3 +46,5 @@ const object = {
     "category": "programmingLanguages",
     "priority": 1
 };
+
+let serverGetAll = new ServerGetAll();
