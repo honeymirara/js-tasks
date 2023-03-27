@@ -12,22 +12,22 @@ repository – функция, симулирующая БД. Хранит ма�
 
 class ServerGetAll {
 
-    controller(object) {
+    controller() {
         try {
-            const data = this.service(object);
+            const data = this.service();
             return data
         } catch (err) {
             return err.message;
         }
     };
 
-    service(object) {
-        const data = this.repository(object);
+    service() {
+        const data = this.repository();
         return data;
 
     };
 
-    repository(object) {
+    repository() {
         const array = [
             { "id": "javascript", "label": "JavaScript", "category": "programmingLanguages", "priority": 1 },
             { "id": "typescript", "label": "TypeScript", "category": "programmingLanguages", "priority": 1 },
@@ -35,16 +35,12 @@ class ServerGetAll {
             { "id": "java", "label": "Java", "category": "programmingLanguages", "priority": 3 },
             { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }
         ];
-        const filtered = array.filter((elem) => elem.id === object.id);
-        if (filtered.length > 0) throw new Error('this label is exist');
+        return array;
+        
         
     };
 }
 
-const object = {
-    "label": "JavaScript",
-    "category": "programmingLanguages",
-    "priority": 1
-};
 
 let serverGetAll = new ServerGetAll();
+let controller = serverGetAll.controller();
