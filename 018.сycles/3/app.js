@@ -8,12 +8,20 @@
 // }
 // console.log(sum);
 
-const arr = [2, 3, 4, 5];
-let sum = 1;
+// const arr = [2, 3, 4, 5];
+// let sum = 1;
+// let i = 0;
+
+// do {
+//     sum *= arr[i];
+//     i++;
+// } while (i < arr.length)
+// console.log(sum);
+
 let i = 0;
 
-do {
+do{
     sum *= arr[i];
     i++;
-} while (i < arr.length)
+} while (i <arr.length);
 console.log(sum);
