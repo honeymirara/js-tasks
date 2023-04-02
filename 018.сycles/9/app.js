@@ -3,8 +3,8 @@ const arr = [2, 5, 9, 15, 0, 4];
 const new_arr = [];
 
 for (let elem of arr) {
-    if (elem % 3 = 0 ) {
-        new_arr.push(elem);
+    if (elem % 3 === 0 ){
+        console.log(elem);
     }
 }
 
