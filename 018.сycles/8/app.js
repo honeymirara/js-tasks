@@ -12,6 +12,11 @@ const final_arr = [];
 
 // console.log(arr);
 
-for (let elem of arr)
+for (let elem of arr) {
+    if (!final_arr.includes(arr[i])) {
+        final_arr.push(elem)
+    }
+}
+console.log(final_arr);
 
 
