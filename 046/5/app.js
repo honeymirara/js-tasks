@@ -6,5 +6,19 @@ class Client{
     doRegistration =() => {
         let mailTag = document.querySelector('.mail');
         let passwordTag = document.querySelector('.password');
+        let buttonTag = document.querySelector('button');
+        
+        buttonTag.addEventListener('click', ()=> {
+            mailTag.innerHTML = mailTag.value
+        })
     }
+
+    
 }
+
+class Server{
+
+}
+
+const client = new Client();
+client.doRegistration();
