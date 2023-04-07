@@ -6,7 +6,7 @@
 // • Добавить проверки на получение значения input
 
 
-class HTML {
+ class HTML {
     bindOption() {
         
         const buttonTag = document.querySelector("button");
@@ -30,5 +30,8 @@ class HTML {
 }
 
 const html = new HTML();
-html.bindOption();
+html.bindOption(); 
+
+
+
 
