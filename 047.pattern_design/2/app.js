@@ -8,8 +8,9 @@ const arrayTag = document.querySelector('.array');
 const chetArrTag = document.querySelector('.chetArrTag');
 const everyInp = [];
 
-buttonTag.addEventListener('click', ()=>{
-    everyInp.push(inputTag.value)
+buttonTag.addEventListener('click', () => {
+    everyInp.push(inputTag.value);
     arrayTag.innerHTML = everyInp;
-    everyInp
+    const filtered = everyInp.filter(el => el % 2 === 0);
+    chetArrTag.innerHTML = filtered;
 });
