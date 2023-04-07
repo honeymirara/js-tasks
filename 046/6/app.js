@@ -10,7 +10,28 @@ repository – функция, симулирующая БД. Хранит ма�
 этим массивом осуществляется только в repository. Массив находится в
 приложении */
 
-class Server{
-    
-middleware()
+class Server {
+
+    middleware = () => {
+
+    }
+    controller = (object) => {
+
+    }
+
+    service = () => {
+        const data = this.repository(object);
+        return data;
+
+    }
+
+    repository = () => {
+        const data = [
+            { "id": 1, "email": "yesenia@mail.ru", "pwd": "pwdffff" },
+            { "id": 2, "email": "hanna@mail.ru", "pwd": "pwdfevcrdv" },
+            { "id": 3, "email": "stanislau@mail.ru", "pwd": "pwdtest" },
+            { "id": 4, "email": "german@mail.ru", "pwd": "pwdqqq" },
+            { "id": 5, "email": "maria@mail.ru", "pwd": "pwdfcel" }
+        ];
+    }
 }
