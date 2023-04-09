@@ -1,9 +1,11 @@
 const express = require('express');
+const { getAll } = require('./service');
+
 const app = express();
 
 
-
 app.get('/', (req, res) => {
+    const data = getAll();
     res.send('it is a get-request');
 });
 
