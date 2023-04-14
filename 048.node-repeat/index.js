@@ -17,24 +17,34 @@ app.get('/', function(req, res){
     });
 
     
+    // function slice_array(slice_len) {
+    //     const arr = [1, 2, 3, 4, 5, 6];
+    //     const result = [];
+        
+    //     for (let i = 0; i < arr.length; i++) {
+    //         const slice = [];
+    //         let j = 0;
+    //         for (let i=0; j < slice_len; j++) {
+    //             slice[slice.length] = arr[i + j];
+    //         }
+    //         i += j - 1
+    //         result[result.length] = slice;
+    //     }
+    //     return result;
+    // }
+    
+    // console.log(slice_array(1));
+    // console.log(slice_array(2));
+    // console.log(slice_array(3));
+
+
     function slice_array(slice_len) {
         const arr = [1, 2, 3, 4, 5, 6];
         const result = [];
-        
-        for (let i = 0; i < arr.length; i++) {
-            const slice = [];
-            let j = 0;
-            for (let i=0; j < slice_len; j++) {
-                slice[slice.length] = arr[i + j];
-            }
-            i += j - 1
-            result[result.length] = slice;
+        for (let i = 0; i < arr.length; i += slice_len) {
+          result.push(arr.slice(i, i + slice_len));
         }
         return result;
-    }
-    
-    console.log(slice_array(1));
-    console.log(slice_array(2));
-    console.log(slice_array(3));
+      }
 
 app.listen(3000, ()=> { console.log('server is running') });
