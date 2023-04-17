@@ -1,5 +1,5 @@
-const express = require("express");
-const app = express();
+const express = require("express"); // require - ключевое слово, с помощью него  мы можем импортирвать. Слово экспресс- зарезервивонное слово библитоеки  внашей директории
+const app = express();  // cоздаем приложение от express-а и пишем переменную app
 const port = 3000;
 
 
