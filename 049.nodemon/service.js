@@ -10,4 +10,8 @@ function getAllData() {
     return arr;
 }
 
+function createData(){
+    
+}
+
 module.exports = {getAllData};
