@@ -1,8 +1,10 @@
 const express = require('express');
+const { getAll, getDataById, createData, updateData } = require('./service/service.js');
+const bodyParser = require('body-parser');
+
+
 const app = express();
-
-const { getAll, getDataById } = require('./service/service.js');
-
+app.use(bodyParser.json())
 
 app.get('/', function (req, res) {
     const data = getAll()
@@ -19,8 +21,19 @@ app.get('/:id', function (req, res) {
 
 app.post('/', function (req, res) {
     const { label, category, priority } = req.body;
-    const data = createData;
-    res.send
+    const data = createData(label, category, priority);
+    res.send(data);
+});
+
+app.put('/:id', function (req, res) {
+    const { id } = req.params;
+    const { label, category, priority } = req.body;
+    const data = updateData(id, label, category, priority);
+    res.send(data);
+});
+
+app.delete('/:id', function (req, res) {
+    const 
 })
 
 app.listen(3000, () => {

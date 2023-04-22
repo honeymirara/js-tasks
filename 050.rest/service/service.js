@@ -23,5 +23,33 @@ function getDataById(id) {
 }
 
 
-function 
-module.exports = { getAll, getDataById };
+function createData(label, category, priority) {
+    const obj = {
+        id: label.toLowerCase(),
+        label: label,
+        category: category,
+        priority: priority
+    }
+    array.push(obj);
+    return obj;
+};
+
+function updateData(id, label, category, priority) {
+    const filtered = array.filter(el => el.id != id)
+    if (filtered.length != array.length) {
+        const obj = {
+            id: id,
+            label: label,
+            category: category,
+            priority: priority
+        }
+        filtered.push(obj);
+        return filtered;
+    }else {
+        return 'id is not exists';
+    }
+
+}
+
+
+module.exports = { getAll, getDataById, createData,updateData };
