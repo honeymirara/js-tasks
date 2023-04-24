@@ -1,5 +1,5 @@
 const express = require('express');
-const { getAll, getDataById, createData, updateData } = require('./service/service.js');
+const { getAll, getDataById, createData, updateData, deleteData } = require('./service/service.js');
 const bodyParser = require('body-parser');
 
 
@@ -13,9 +13,13 @@ app.get('/', function (req, res) {
 
 
 app.get('/:id', function (req, res) {
-    const { id } = req.params;
-    const data = getDataById(id);
-    res.send(data);
+    try {
+        const { id } = req.params;
+        const data = getDataById(id);
+        res.send(data);
+    } catch (err) {
+        res.send(err.message)
+    }
 })
 
 
@@ -33,7 +37,9 @@ app.put('/:id', function (req, res) {
 });
 
 app.delete('/:id', function (req, res) {
-    const 
+    const { id } = req.params;
+    const data = deleteData(id);
+    res.send(data);
 })
 
 app.listen(3000, () => {

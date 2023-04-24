@@ -45,11 +45,15 @@ function updateData(id, label, category, priority) {
         }
         filtered.push(obj);
         return filtered;
-    }else {
+    } else {
         return 'id is not exists';
     }
+};
 
+function deleteData(id) {
+    let filtered = array.filter(el => el.id != id)
+    return filtered;
 }
 
 
-module.exports = { getAll, getDataById, createData,updateData };
+module.exports = { getAll, getDataById, createData, updateData, deleteData};
