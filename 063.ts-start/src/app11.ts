@@ -4,6 +4,5 @@
 let str11: string = 'kotiki';
 
 for (let i: number = 0; i < str11.length; i++){
-    console.log(str11[i]);
-    console.log(str11.split('').indexOf(str11[i]));
+    console.log(str11[i], [i]);
 }
