@@ -4,3 +4,9 @@
 ***
 **
 * */
+
+let number16:number = +prompt();
+
+for (let i: number = 0; i > 0; i--) {
+    console.log('*'.repeat(i)); // метод который возращают какой-то уже умноженный символ несколько раз
+}
