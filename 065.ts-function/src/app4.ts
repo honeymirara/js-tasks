@@ -1,8 +1,8 @@
 /* У вас есть массив объектов вида приведенного в приложении. Необходимо
-вывести только те товары из положения, количество которых внутри массива
-кратно 3 */
+вывести итоговую стоимость на складе.
+Итоговая стоимость = количество * цена +  */
 
-interface iThings3 {
+interface iThings4 {
     id: number;
     title: string;
     count: number;
@@ -10,7 +10,7 @@ interface iThings3 {
 }
 
 
-let array3: Array<iThings3> = [
+let array4: Array<iThings4> = [
     { id: 1, title: 'Часы', count: 10, price: 500 },
     { id: 2, title: 'Смартфон', count: 33, price: 1500 },
     { id: 3, title: 'Моноблок', count: 6, price: 2200 },
@@ -18,9 +18,8 @@ let array3: Array<iThings3> = [
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ];
 
-function multipleOfThree3(array: iThings3[]): iThings3[] {
-    let result3: iThings3[] = array3.filter((el: iThings3) => el.count % 3)
-    return result3;
+function resultCount4(array: iThings4[]): number {
+    let result4: number = array4.reduce((sum: number, elem: iThings4) => elem.count * elem.price + sum, 0)
+    return result4;
 }
-
-console.log(multipleOfThree3(array3))
+console.log(resultCount4(array4));
