@@ -1,7 +1,7 @@
 /* У вас есть массив объектов вида приведенного в приложении. Необходимо
-вывести товар с максимальным прайсом */
+вывести средний прайс среди всех продуктов */
 
-interface iThings5 {
+interface iThings6 {
     id: number;
     title: string;
     count: number;
@@ -9,7 +9,7 @@ interface iThings5 {
 }
 
 
-let array5: Array<iThings5> = [
+let array6: Array<iThings5> = [
     { id: 1, title: 'Часы', count: 10, price: 500 },
     { id: 2, title: 'Смартфон', count: 33, price: 1500 },
     { id: 3, title: 'Моноблок', count: 6, price: 2200 },
@@ -17,12 +17,9 @@ let array5: Array<iThings5> = [
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ];
 
-function maxPrice(array: iThings5[]): iThings5[] {
-    let arrayOfPrices: number[] = array.map((el: iThings5) => el.price);
-    let max: number = Math.max(...arrayOfPrices);
-    console.log(arrayOfPrices);
-    return array.filter((el: iThings5) => el.price == max);
-
+function middlePrice6(array6) {
+    let sum6 = array6.reduce((sum, elem) => sum + elem.price, 0)
+    return sum6 / array6.length;
 }
 
-console.log(...maxPrice(array5));
+console.log(middlePrice6(array6));
