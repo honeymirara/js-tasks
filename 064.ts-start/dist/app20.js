@@ -5,8 +5,8 @@ let arr20 = [
     { id: 2, author: 'Маяковский', title: 'Лилечка', count: 450 },
     { id: 3, author: 'Толстой', title: 'Толстой', count: 1000 }
 ];
-let maxPage20 = Math.max(...arr20.map(book => book.count));
-let findBook20 = arr20.find(book => book.count === maxPage20);
+let maxPage20 = Math.max(...arr20.map(books => books.count));
+let findBook20 = arr20.find(books => books.count === maxPage20);
 console.log(findBook20, maxPage20);
 /*
 const maxPageCount = Math.max(...books.map(book => book.pageCount));
