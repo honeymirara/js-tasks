@@ -7,8 +7,8 @@ let array6 = [
     { id: 4, title: 'Ноутбук', count: 13, price: 3000 },
     { id: 5, title: 'Планшет', count: 22, price: 2100 },
 ];
-function middlePrice6(array6) {
-    let sum6 = array6.reduce((sum, elem) => sum + elem.price, 0);
+function middlePrice6(array) {
+    let sum6 = array.reduce((sum, elem) => sum + elem.price, 0);
     return sum6 / array6.length;
 }
 console.log(middlePrice6(array6));
