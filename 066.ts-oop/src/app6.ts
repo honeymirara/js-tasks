@@ -70,25 +70,28 @@ class Calculator6 {
         if (typeof a == "number" && typeof b == "number")
             return a + b
     }
-    substract<Type>(a: number, b: number) {
-        return a - b
+    substract<Type>(a: Type, b: Type) {
+        if (typeof a == "number" && typeof b == "number")
+            return a - b
     }
-    multiply(a: number, b: number) {
-        return a * b
+    multiply<Type>(a: Type, b: Type) {
+        if (typeof a == "number" && typeof b == "number")
+            return a * b
 
     }
 
-    divide(a: number, b: number) {
-        return a / b
+    divide<Type>(a: Type, b: Type) {
+        if (typeof a == "number" && typeof b == "number")
+            return a / b
     }
 }
 
 let calculator6 = new Calculator6()
 
-console.log(calculator6.add(10, 2));
-console.log(calculator6.substract(10, 2));
-console.log(calculator6.multiply(10, 2));
-console.log(calculator6.divide(10, 2));
+console.log(calculator6.add<number>(10, 2));
+console.log(calculator6.substract<number>(10, 2));
+console.log(calculator6.multiply<number>(10, 2));
+console.log(calculator6.divide<number>(10, 2));
 
 
 
