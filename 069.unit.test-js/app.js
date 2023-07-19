@@ -78,15 +78,66 @@ function uniqueNumber(arrNum) {
     значение) где значение число и вывести количество. Добавить необходимые
     проверки. */
 
-function uniqueObject(array) {
+function uniqueObject(object) {
     try {
+        if (typeof object !== 'object' || object === null) {
+            throw new Error(' is not a valid object');
+        }
+        let count = 0;
+        for (let key in object) {
+            if (typeof object[key] === 'number') {
+                count++;
+            }
+        }
+        return count;
 
     } catch (err) {
-return err.message;
+        return err.message;
+    }
+}
+
+
+/* На входе статичный объект. Необходимо числовые значения удвоить на выходе.
+Написать тест для функции */
+
+function double(statObj) {
+    try {
+        for (let key in statObj) {
+            if (typeof statObj[key] === 'number') {
+                statObj[key] *= 2;
+            }
+        }
+        return statObj;
+    } catch (err) {
+        return err.message;
+    }
+}
+
+
+
+/*  На входе статичный объект. Необходимо сформировать массив из всх четных
+значений объекта.
+Написать тест для функции */
+
+function makeArray(obj) {
+    try {
+        if (typeof obj !== 'object' || typeof obj === 'null') throw new Error('is not a valid object');
+        let arr = []
+        for (let key in obj) {
+
+            if (typeof obj[key] == 'number' && obj[key] % 2 === 0) {
+                arr.push(obj[key])
+            }
+        }
+        return arr;
+
+    } catch (err) {
+        return err.message;
     }
 }
 
 
 
 
-module.exports = { sum, multiply, summary, findProduct, uniqueNumber };
+
+module.exports = { sum, multiply, summary, findProduct, uniqueNumber, double, uniqueObject, makeArray };
