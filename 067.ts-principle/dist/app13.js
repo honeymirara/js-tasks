@@ -1,8 +1,20 @@
+/* . Реализуйте класс ServerPost. Обязательными функциями считаются функции
+middleware, controller, service, repository. Цепочка взаимодействия между
+методами следующая: middleware -> controller -> service -> repository, где:
+Задание:
+на вход подается JSON вида: `{ "email": "Test", "pws": "test" }`
+Необходимо добавить в массив БД объект только в том случае, если нет
+совпадений по email */
 class ServerPost {
-    middleware() {
+    middleware(obj) {
+        if (!obj.hasOwnProperty('email'))
+            throw new Error('email does not exists');
+        if (!obj.hasOwnProperty('pwd'))
+            throw new Error('pwd is invalid (does not exists)');
     }
     controller(obj) {
         try {
+            this.middleware(obj);
             const data4 = this.service(obj);
             return data4;
         }
@@ -24,6 +36,6 @@ class ServerPost {
     }
 }
 ;
-const obj = JSON.parse(`{ "email": "Took", "pwd": "took" }`);
+const obj = JSON.parse(`{"pwd": "took" }`);
 let serverPost = new ServerPost();
 console.log(serverPost.controller(obj));

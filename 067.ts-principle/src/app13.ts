@@ -5,17 +5,18 @@ middleware, controller, service, repository. Цепочка взаимодейс
 на вход подается JSON вида: `{ "email": "Test", "pws": "test" }`
 Необходимо добавить в массив БД объект только в том случае, если нет
 совпадений по email */
-interface iServer {
 
-}
 
 class ServerPost {
-    middleware() {
 
+    middleware(obj) {
+        if (!obj.hasOwnProperty('email')) throw new Error('email does not exists');
+        if(!obj.hasOwnProperty('pwd')) throw new Error('pwd is invalid (does not exists)')
     }
 
     controller(obj) {
         try {
+            this.middleware(obj)
             const data4 = this.service(obj);
             return data4;
 
@@ -24,6 +25,8 @@ class ServerPost {
         }
 
     }
+
+
 
     service(obj) {
         const data5 = this.repository(obj);
@@ -39,8 +42,9 @@ class ServerPost {
         return arr;
     }
 };
-const obj = JSON.parse(`{ "email": "Took", "pwd": "took" }`)
-    let serverPost = new ServerPost();
+
+const obj = JSON.parse(`{"pwd": "took" }`)
+let serverPost = new ServerPost();
 console.log(serverPost.controller(obj));
 
 
