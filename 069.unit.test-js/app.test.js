@@ -1,4 +1,4 @@
-const { sum, multiply, summary, findProduct, uniqueNumber, double, uniqueObject, makeArray } = require('./app');
+const { sum, multiply, summary, findProduct, uniqueNumber, double, uniqueObject, makeArray, splitArray } = require('./app');
 
 describe('набор тестов 1', () => {
     test('success', () => {
@@ -68,12 +68,6 @@ describe('набор теста 4 ', () => {
 
     })
 
-
-
-
-    /* test('success', () => {
-
-    }) */
 })
 
 
@@ -153,6 +147,17 @@ describe('набор теста 8', () => {
 })
 
 
+
+describe('набор текста 9', () => {
+    let arr = [1, 2, 3, 4, 5, 6];
+    const n = 1;
+
+    test('succes', () => {
+        const result = splitArray(arr, n);
+        expect(result).toEqual([[1], [2], [3], [4], [5], [6]]
+            );
+    })
+})
 
 
 

@@ -136,8 +136,46 @@ function makeArray(obj) {
     }
 }
 
+/* На входе статичный массив [1, 2, 3, 4, 5, 6] и динамическое значение n. Необходимо
+разбить данный одномерный массив на маленькие массивы в зависимости от
+того, какого число ввел пользователь. Добавить необходимые проверки.
+1 -> [[1], [2], [3], [4], [5], [6]]
+2 -> [[1, 2], [3, 4], [5, 6]]
+3 -> [[1, 2, 3], [4, 5, 6]]
+4 -> [[1, 2, 3, 4], [5, 6]
+5 -> [[1, 2, 3, 4, 5], [6]]
+6 -> [[1, 2, 3, 4, 5, 6]]
+Написать тест для функции */
+
+
+function splitArray(arr, n) {
+    try {
+        if (n <= 0) throw new Error('this number is negative.');
+        let result = [];                //динамическое  значение n rjnjhjt bcgjkmpetncz lkz hfp,btybz vfccbdf 
+
+        for (let i = 0; i < arr.length; i += n) {
+            result.push(arr.slice(0, n ))
+        }
+        return result;
+
+
+    } catch (err) {
+        return err.message
+    };
+}
+
+
+/* Реализуйте функцию, которая принимает в качестве параметра строку и
+возвращает массив без каких-либо элементов с одинаковым значением рядом
+друг с другом.
+Написать тест для функции
+'AAAABBBCCDAABBB -> ['A', 'B', 'C', 'D', 'A', 'B’]
+'ABBCcAD’ -> ['A', 'B', 'C', 'c', 'A', 'D’]
+'12233’ -> [1, 2, 3]
+Написать тест для функции */
 
 
 
 
-module.exports = { sum, multiply, summary, findProduct, uniqueNumber, double, uniqueObject, makeArray };
+
+module.exports = { sum, multiply, summary, findProduct, uniqueNumber, double, uniqueObject, makeArray, splitArray };
