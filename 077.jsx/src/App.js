@@ -5,6 +5,7 @@ import Task4 from "./pages/Task4";
 import Task5 from "./pages/Task5";
 import Task2event from './pages/Task2event';
 import Task3event from './pages/Task3event';
+import Task4event from './pages/Task4event';
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <Task5 />
       <Task2event />
       <Task3event/>
+      <Task4event/>
     </div>
   )
 } 
