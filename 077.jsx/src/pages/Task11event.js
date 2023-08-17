@@ -21,7 +21,7 @@ export default function Task11event() {
 
     return (
         <>
-            <h1>{count}</h1>
+            <p>{number}</p>
             <button onClick={onClickMinus} className="minus">- Минус</button>
             <button onClick={onClickPlus} className="plus">Плюс +</button>
         </>
