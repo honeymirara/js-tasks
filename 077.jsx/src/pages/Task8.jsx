@@ -1,4 +1,4 @@
-import { UseState } from 'react';
+import { useState } from 'react';
 
 export default function HookUseState() {
     const [value, setValue] = useState('')
