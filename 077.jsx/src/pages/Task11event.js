@@ -8,9 +8,7 @@ import React, { useState } from 'react';
 export default function Task11event() {
     const [number, setNumber] = useState(0);
 
-    function inputValue(event) {
-        setNumber(event.target.value)
-    }
+   
 
     const onClickPlus = () => {
         setNumber(number + 1)

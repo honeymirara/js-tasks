@@ -9,10 +9,7 @@ import React, { useState } from 'react';
 export default function Task12event() {
     const [number, setNumber] = useState(1);
 
-    function inputValue(event) {
-        setNumber(event.target.value)
-    }
-
+    
     const onClickPlus = () => {
         setNumber(number + 1)
     }
