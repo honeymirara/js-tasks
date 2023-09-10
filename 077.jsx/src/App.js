@@ -16,6 +16,7 @@ import Task8 from './pages/Task8';
 import Task13page from './pages/Task13page'
 import Task14page from './pages/Task14page'
 import Task15page from './pages/Task15page'
+import Task16page from './pages/Task16page'
 
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
       <Task13page/>
       <Task14page/>
       <Task15page/>
+      <Task16page />
     </div>
   )
 } 
