@@ -18,6 +18,7 @@ import Task14page from './pages/Task14page'
 import Task15page from './pages/Task15page'
 import Task16page from './pages/Task16page'
 import Task17page from "./pages/Task7event";
+import Task18page from './pages/Task18page'
 
 export default function App() {
   return (
@@ -42,6 +43,7 @@ export default function App() {
       <Task15page/>
       <Task16page />
       <Task17page/>
+      <Task18page/>
     </div>
   )
 } 
