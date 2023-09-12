@@ -22,6 +22,7 @@ import Task18page from './pages/Task18page';
 import Task19effect from './pages/Task19effect';
 import Task20ref from "./pages/Task20ref";
 import Task21effect from './pages/Task21effect';
+import Task22refs from './pages/Task22refs';
 
 export default function App() {
   return (
@@ -50,6 +51,7 @@ export default function App() {
       <Task19effect />
       <Task20ref />
       <Task21effect />
+      <Task22refs/>
     </div>
   )
 } 
