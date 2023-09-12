@@ -18,7 +18,10 @@ import Task14page from './pages/Task14page'
 import Task15page from './pages/Task15page'
 import Task16page from './pages/Task16page'
 import Task17page from "./pages/Task7event";
-import Task18page from './pages/Task18page'
+import Task18page from './pages/Task18page';
+import Task19effect from './pages/Task19effect';
+import Task20ref from "./pages/Task20ref";
+import Task21effect from './pages/Task21effect';
 
 export default function App() {
   return (
@@ -35,15 +38,18 @@ export default function App() {
       <Task6event />
       <Task7event />
       <Task11event />
-      <Task12event/>
-      <Task10event/>
-      <Task8/>
-      <Task13page/>
-      <Task14page/>
-      <Task15page/>
+      <Task12event />
+      <Task10event />
+      <Task8 />
+      <Task13page />
+      <Task14page />
+      <Task15page />
       <Task16page />
-      <Task17page/>
-      <Task18page/>
+      <Task17page />
+      <Task18page />
+      <Task19effect />
+      <Task20ref />
+      <Task21effect />
     </div>
   )
 } 
