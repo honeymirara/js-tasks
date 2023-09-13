@@ -26,6 +26,8 @@ import Task22refs from './pages/Task22refs';
 import Task23effect from './pages/Task23effect'
 import Task24ref from './pages/Task24ref';
 import Task25ref from './pages/Task25ref';
+import Task26effect from './pages/Task26effect'
+import Task27memo from './pages/Task27memo';
 
 export default function App() {
   return (
@@ -58,6 +60,8 @@ export default function App() {
       <Task23effect />
       <Task24ref />
       <Task25ref />
+      <Task26effect />
+      <Task27memo/>
     </div>
   )
 } 
