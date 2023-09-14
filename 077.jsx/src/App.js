@@ -29,7 +29,8 @@ import Task25ref from './pages/Task25ref';
 import Task26effect from './pages/Task26effect'
 import Task27memo from './pages/Task27memo';
 import MyContext from "./context/context";
-import Task28context from './pages/Task28context'
+import Task28context from './pages/Task28context';
+import Task29Memo from './pages/Task29memo'
 
 export default function App() {
   return (
@@ -66,6 +67,7 @@ export default function App() {
         <Task26effect />
         <Task27memo />
         <Task28context/>
+        <Task29Memo/>
       </MyContext.Provider>
 
     </div>
