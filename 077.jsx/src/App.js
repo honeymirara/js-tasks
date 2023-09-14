@@ -28,40 +28,46 @@ import Task24ref from './pages/Task24ref';
 import Task25ref from './pages/Task25ref';
 import Task26effect from './pages/Task26effect'
 import Task27memo from './pages/Task27memo';
+import MyContext from "./context/context";
+import Task28context from './pages/Task28context'
 
 export default function App() {
   return (
     <div>
-      <Task1 />
-      <Task2 />
-      <Task3 />
-      <Task4 />
-      <Task5 />
-      <Task2event />
-      <Task3event />
-      <Task4event />
-      <Task5event />
-      <Task6event />
-      <Task7event />
-      <Task11event />
-      <Task12event />
-      <Task10event />
-      <Task8 />
-      <Task13page />
-      <Task14page />
-      <Task15page />
-      <Task16page />
-      <Task17page />
-      <Task18page />
-      <Task19effect />
-      <Task20ref />
-      <Task21effect />
-      <Task22refs />
-      <Task23effect />
-      <Task24ref />
-      <Task25ref />
-      <Task26effect />
-      <Task27memo/>
+      <MyContext.Provider value={{ name: 'name', surname: 'surname' }}>
+        <Task1 />
+        <Task2 />
+        <Task3 />
+        <Task4 />
+        <Task5 />
+        <Task2event />
+        <Task3event />
+        <Task4event />
+        <Task5event />
+        <Task6event />
+        <Task7event />
+        <Task11event />
+        <Task12event />
+        <Task10event />
+        <Task8 />
+        <Task13page />
+        <Task14page />
+        <Task15page />
+        <Task16page />
+        <Task17page />
+        <Task18page />
+        <Task19effect />
+        <Task20ref />
+        <Task21effect />
+        <Task22refs />
+        <Task23effect />
+        <Task24ref />
+        <Task25ref />
+        <Task26effect />
+        <Task27memo />
+        <Task28context/>
+      </MyContext.Provider>
+
     </div>
   )
 } 
