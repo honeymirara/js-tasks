@@ -31,11 +31,18 @@ import Task27memo from './pages/Task27memo';
 import MyContext from "./context/context";
 import Task28context from './pages/Task28context';
 import Task29Memo from './pages/Task29memo'
+import Task30context from './pages/Task30context'
+import {useState} from 'react'
 
 export default function App() {
+  const [value, setValue] = useState('en');
+  function sayHello(event) {
+    setValue(event.target.textContent)
+}
+
   return (
     <div>
-      <MyContext.Provider value={{ name: 'name', surname: 'surname' }}>
+      <MyContext.Provider value={{ name: 'name', surname: 'surname', value:value, sayHello: sayHello}}>
         <Task1 />
         <Task2 />
         <Task3 />
@@ -68,6 +75,7 @@ export default function App() {
         <Task27memo />
         <Task28context/>
         <Task29Memo/>
+        <Task30context/>
       </MyContext.Provider>
 
     </div>
