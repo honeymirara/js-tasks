@@ -32,6 +32,7 @@ import MyContext from "./context/context";
 import Task28context from './pages/Task28context';
 import Task29Memo from './pages/Task29memo'
 import Task30context from './pages/Task30context'
+import Task31callback from './pages/Task31callback';
 import {useState} from 'react'
 
 export default function App() {
@@ -76,6 +77,7 @@ export default function App() {
         <Task28context/>
         <Task29Memo/>
         <Task30context/>
+        <Task31callback/>
       </MyContext.Provider>
 
     </div>
