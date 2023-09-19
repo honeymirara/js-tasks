@@ -37,6 +37,7 @@ import Task32callback from './pages/Task32callback'
 import {useState} from 'react'
 import Task33callback from "./pages/Task33callback";
 import Task34reducer from "./pages/Task34reducer";
+import Task35reducer from "./pages/Task35reducer";
 
 export default function App() {
   const [value, setValue] = useState('en');
@@ -84,6 +85,7 @@ export default function App() {
         <Task32callback/>
         <Task33callback/>
         <Task34reducer/>
+        <Task35reducer/>
       </MyContext.Provider>
 
     </div>
