@@ -12,5 +12,5 @@ const increment = createSlice({
     }
 })
 
-export const { countPlus } = increment.actions
+export const { countPlus} = increment.actions
 export default increment.reducer
