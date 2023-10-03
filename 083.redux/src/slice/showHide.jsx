@@ -1,20 +1,22 @@
-import {createSlice} from '@reduxjs/toolkit';
-/* 
+import { createSlice } from '@reduxjs/toolkit';
+
 const showHide = createSlice({
     name: 'showHide',
-    initialState:'',
-    flag: false,
-    data: ''
-},
-reducers: {
-show: function (){
-        return {flag:true, data: 'Hi'},
-},
-        hide: function() {
-            return {flag:false, data: ''}
-    }
-}
-)
+    initialState: {
+        flag: false,
+        result: ''
 
-export const {validation} = showHide.actions
-export default showHide.reducer */
+    },
+
+    reducers: {
+        show: function (state, data) {
+            return { flag: true, result: 'Hi' }
+        },
+        hide: function (state, data) {
+            return { flag: false, result: '' }
+        }
+    }
+})
+
+export const { show, hide } = showHide.actions
+export default showHide.reducer 

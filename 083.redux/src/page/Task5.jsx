@@ -4,16 +4,26 @@
 
 import { createSlice } from '@reduxjs/toolkit'
 import { useDispatch, useSelector } from 'react-redux';
+import {show, hide} from '../slice/showHide';
 
 export default function Task5() {
     const dispatch = useDispatch();
-    const {input, result} = useSelector(state => st)
+    const data = useSelector((state) => state.showHide)
+
+    function callShow(){
+        dispatch(show())
+    }
+
+    function callHide(){
+        dispatch(hide())
+    }
 
     return (
         <>
-            <div>Hello</div>
-            <button></button>
-            <button></button>
+        <p>{data.result}</p>
+           
+            <button onClick={callShow}>Show text</button>
+            <button onClick={callHide}>Hide text</button>
         </>
 
     )
