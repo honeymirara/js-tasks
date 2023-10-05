@@ -6,6 +6,7 @@ import inputPalindrome from '../slice/inputPalindrome'
 import showHide from '../slice/showHide'
 import validEmail from '../slice/validEmail'
 import sumInput from '../slice/sumInput'
+import validPass from '../slice/validPass'
 
 export const store = configureStore({
     reducer: {
@@ -15,7 +16,8 @@ export const store = configureStore({
         inputPalindrome: inputPalindrome,
         showHide: showHide,
         validEmail: validEmail,
-        sumInput: sumInput
+        sumInput: sumInput,
+        validPass: validPass
     },
 
 })

@@ -11,7 +11,7 @@ export default function Task6(){
     return (
         <>
         <h1>{String(result)}</h1>
-        <input onChange ={(event)=> dispatch(fillInp(event.target.value))} type="text" />
+        <input onChange={(event)=> dispatch(fillInp(event.target.value))} type="text" />
         <button onClick={()=> dispatch(isValidEmail())}>click</button>
         </>
     )

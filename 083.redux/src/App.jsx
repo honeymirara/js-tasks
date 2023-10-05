@@ -6,6 +6,7 @@ import Task4 from './page/Task4'
 import Task5 from './page/Task5'
 import Task6 from './page/Task6'
 import Task7 from './page/Task7'
+import Task8 from './page/Task8'
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Task5 />
       <Task6 />
       <Task7 />
+      <Task8/>
     </>
   )
 }
