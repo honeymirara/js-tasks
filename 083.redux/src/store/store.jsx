@@ -7,6 +7,8 @@ import showHide from '../slice/showHide'
 import validEmail from '../slice/validEmail'
 import sumInput from '../slice/sumInput'
 import validPass from '../slice/validPass'
+import counter from '../slice/counter'
+import showInpValue from '../slice/showInpValue'
 
 export const store = configureStore({
     reducer: {
@@ -17,7 +19,9 @@ export const store = configureStore({
         showHide: showHide,
         validEmail: validEmail,
         sumInput: sumInput,
-        validPass: validPass
+        validPass: validPass,
+        counter: counter,
+        showInpValue: showInpValue
     },
 
 })

@@ -7,7 +7,9 @@ import Task5 from './page/Task5'
 import Task6 from './page/Task6'
 import Task7 from './page/Task7'
 import Task8 from './page/Task8'
+import Task10 from './page/Task10'
 import './App.css'
+import Task11 from './page/Task11'
 
 function App() {
 
@@ -21,7 +23,9 @@ function App() {
       <Task6 />
       <Task7 />
       <Task8/>
-    </>
+      <Task10/>
+      <Task11/>
+      </>
   )
 }
 
