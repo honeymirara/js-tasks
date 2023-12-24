@@ -193,6 +193,54 @@ async function tasks() {
      })
  
      console.log(res) */
+    /* 
+        20.Найдите всех студентов из коллекции "students", чьи адреса электронной почты
+    заканчиваются на ".com */
+
+    /* const res = await table.find({
+        email: {
+            $regex: /^[a-z\.\-\_A-Z0-9]+@[a-z]+\.com$/gm
+        }
+    })
+    
+    console.log(res); */
+
+    /* 21. Отобразите количество студентов коллекции "students" */
+
+    /*  const res = await table.find().countDocuments()
+     console.log(res); */
+    /* 
+        22. Вывести список студентов, чьи возрасты меньше 25 лет в отсортированном
+    порядке. */
+    /* const res = await table.find({age: {$lt: 25}}).sort({age: 1})
+    console.log(res);
+    } */
+
+    /* 23. Отобразите 5 студентов старше 20 лет. */
+    /* const res = await table.find({ age: { $gt: 20 } }).limit(5).sort({ age: 1 })
+    console.log(res);
+
+*/
+    /* 24.Отобразите студентов в диапазоне от 20 лет до 30 в отсортированном порядке. */
+
+    /*  const res = await table.find(
+         {
+             $and: [
+                 { age: { $gt: 20 } },
+                 { age: { $lt: 30 } }
+             ]
+         }
+     ).sort({age: 1})
+ 
+     console.log(res) */
+
+    /* 25. Отобразите количество студентов коллекции "students" где возраст от 20*/
+    /* const res = await table.find(
+        {age: {$gt: 20}}
+    ).sort({age:1}).countDocuments()
+
+    console.log(res); */
+
    
 
 }
