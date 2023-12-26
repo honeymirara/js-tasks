@@ -307,6 +307,10 @@ async function tasks() {
     );
     console.log(result) */
 
+    /* 35. Удалить коллекцию */
+    /* const res = await table.drop()
+    console.log(res); */
+
 }
 
 
