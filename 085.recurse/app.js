@@ -16,7 +16,7 @@ item(4)  */
 
 //Посчитайте количество вызовов функции с помощью замыкания
 
-/* function wrapper(){
+function wrapper(){
     let res = 0
 
     return function(){
@@ -29,7 +29,9 @@ const item = wrapper()
 item()
 item()
 item()
-item() */
+item() 
+item() 
+item() 
 
 //выполнить замыкание для  фунции по созданию пароля до 9 символов
 
