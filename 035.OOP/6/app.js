@@ -15,7 +15,6 @@ class ServerGetAll {
         const data = this.service();
         return data;
     }
-}
 
 service(){
     const data = this.repository();
@@ -31,7 +30,7 @@ repository() {
         { "id": "go", "label": "GO", "category": "programmingLanguages", "priority": 3 }
     ]
     return arr;
-}
+}}
 
 const ServerGetAll = new ServerGetAll();
 console.log(ServerGetAll.controller())

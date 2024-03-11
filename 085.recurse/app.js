@@ -63,7 +63,7 @@ function func(a, b, c, d) {
 
 func(1, 2, 3, 4) */
 
-function wrap(a) {
+/* function wrap(a) {
 
     return function (b) {
 
@@ -77,7 +77,37 @@ function wrap(a) {
     }
 }
 
-wrap(1)(2)(3)(4)
+wrap(1)(2)(3)(4) */
+
+//что такое рекурсия? Это когда գործառույթ вызывает циклично саму же сбея
+
+
+
+//пример рекурсии. Нв входе число n  = 2, step = 5. Возведите n в степень step используя рекурсию 
+
+
+/* let n = 2;
+let step = 5;
+
+let res = 1;
+
+
+function test(n, step) {
+    if (step === 0) return;
+    res = n + 1
+    test(n, step - 1)
+}
+
+test(n, step - 1)
+console.log(res) */
+
+
+
+
+
+
+
+
 
 
 
@@ -92,6 +122,38 @@ wrap(1)(2)(3)(4)
 
 
 // Отобразите в строке через пробел числа от 0 до 10 по возрастанию используя рекурсию
+
+
+/* let res = '';
+let length = 10;
+n = 0
+
+function test(n, length) {
+
+    if (length === 0) return;
+    res = n + 1
+
+    test(n, length - 1);
+}
+
+test(n, length);
+console.log(res); */
+
+let arr = [];
+let arrLength = 10;
+let n = 0
+
+function test(n, arrLength) {
+    if (arrLength === 0) return;
+    arr.push(n + 1)
+
+    test(n, arrLength - 1)
+}
+
+test(n , arrLength)
+console.log(res)
+
+
 
 /* function recurse() {
 
