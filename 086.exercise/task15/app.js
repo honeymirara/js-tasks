@@ -43,7 +43,7 @@ console.log(res) */
 
 //3-ий способ
 
-const groupStudentsByAge = (arr) => {
+/* const groupStudentsByAge = (arr) => {
     let resultObj = {}
     arr.forEach(el => {
         if (!resultObj[el.age]) {
@@ -55,4 +55,4 @@ const groupStudentsByAge = (arr) => {
 }
 
 
-return resultObj
+return resultObj */
