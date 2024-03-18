@@ -10,8 +10,8 @@ for (let i = 0; i < str.length; i++) {
 console.log(count.length)
 return count.length */
 
-let str = 'klever'.split('')
+/* let str = 'klever'.split('')
 let count = []
 
-str.filter((el) => )
+str.filter((el) => ) */
 
