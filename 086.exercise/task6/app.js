@@ -7,9 +7,9 @@ console.log(newStr) */
 
 let newStr = []
 
-for (let i = 0; i < str.length; i--) {
-    newStr.push(str[i] + 1)
+for (let i = 0; i < str.length; i++) {
+    newStr.unshift(str[i])
 }
 
-console.log(newStr)
+console.log(newStr.join(''))
 return newStr
